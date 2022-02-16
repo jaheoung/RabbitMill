@@ -13,5 +13,9 @@ UCLASS()
 class RABBITMILL_API AInGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
+
+public:
+	class AMyCameraActor* mainCamera;
 	
+	virtual void StartPlay() override;
 };
